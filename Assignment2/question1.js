@@ -11,6 +11,7 @@ You are given a variable “marks”. Your task is to print:
 - FF if the mark is less than or equal to 30
 */
 
+//Code for program
 marks = prompt("Enter the marks : ");
         if(marks > 90 && marks<=100)
             console.log("AA");
