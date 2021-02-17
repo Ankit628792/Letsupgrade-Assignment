@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Filter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #eee;
+        }
+
+        .data {
+            margin: auto;
+            width: 80%;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border: none;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 10px 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        td {
+            color: #444;
+            font-size: 18px;
+        }
+
+        #search {
+            width: 50%;
+            display: flex;
+            justify-content: space-between
+        }
+
+        #searchName,
+        #searchCategory {
+            margin-top: 20px;
+            height: 40px;
+            width: 45%;
+            text-indent: 20px;
+            font-size: 16px;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="data">
+        <h2>All Products</h2>
+
+        <div id="search">
+            <input type="text" placeholder="Search By Name" id="searchName" onkeyup="searchByName()">
+            <input type="text" placeholder="Search By Category" id="searchCategory" onkeyup="searchByCategory()">
+        </div>
+
+        <table class="table" border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>S. no.</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Color</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="tab-data">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body></html>
